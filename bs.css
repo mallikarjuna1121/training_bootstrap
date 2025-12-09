@@ -1,0 +1,223 @@
+/* Header styling for top section */
+#mypage-header {
+	text-align: center;
+	background-color: rgb(139, 137, 137);
+	color: #FFFFFF;
+	border-radius: 15px 15px 0px 0px;
+	margin-bottom: 18px;
+	padding-bottom: 10px;
+}
+
+#display_name {
+	font-weight: bold;
+}
+
+/* Footer styling for bottom section */
+#mypage-footer {
+	background: linear-gradient(135deg, #6C63FF, #8D78FF);
+	color: white;
+	padding: 10px 0px;
+	border-radius: 0px 0px 15px 15px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 18px;
+}
+
+/* Styling for highlighting important text */
+.important-content {
+	font-weight: 700;
+	color: #2A2A2A;
+}
+
+/* Base layout styling for background and spacing */
+body {
+	padding-top: 20px;
+	background-color: #F7F5FF;
+}
+
+/* Left side tab container styling */
+.tabs-left {
+	background-color: #EDE9FF;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+/* Content area spacing */
+.center-content {
+	padding: 15px;
+	color: white;
+}
+
+/* Highlight box appearance */
+.highlight-box {
+	padding: 5px 5px 0px 10px;
+	font-size: 18px;
+	background-color: #F7F5FF;
+	border-left: 15px solid #6C63FF;
+	color: #2A2A2A;
+	border-radius: 15px;
+}
+
+/* Paragraph text alignment */
+.paragraph-align {
+	text-align: justify;
+}
+
+/* Removing bullets and padding for skills/certification lists */
+.skills-section ul {
+	list-style-type: none;
+	padding-left: 0;
+	color: #2A2A2A;
+}
+
+/* Anchor styling: remove underline and change color on hover */
+.anchor {
+	color: skyblue;
+	font-size: 16px;
+}
+
+.anchor:hover {
+	color: black;
+	text-decoration: none;
+	color: #FFD966;
+}
+
+/* Desktop tabs layout changes */
+@media (min-width: 768px) {
+	.tabs-styles {
+		display: block;
+		align-items: stretch;
+	}
+
+	.tabs-styles>li {
+		float: none;
+		margin-bottom: 5px;
+	}
+}
+
+/* Mobile tabs scrolling behavior */
+@media (max-width: 767px) {
+	.tabs-styles {
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+
+	.tabs-styles>li {
+		display: inline-block;
+		float: none;
+	}
+}
+
+/* Form-group container styling */
+.form-styles {
+	margin-bottom: 15px;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #EFEAFF;
+	color: #2A2A2A;
+}
+
+/* Styling for exercise form sections */
+#exercise_forms {
+	border-radius: 30px;
+	padding-top: 10px;
+}
+
+/* Toast container: stays hidden initially and shows at top-right of screen */
+#my_toast {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 3px;
+}
+
+/* Close button hover effect to indicate clickability */
+#close_toast:hover {
+	cursor: pointer;
+}
+
+/* Main toast message styling with padding, background, and rounded edges */
+#toast_message {
+	padding: 3px 20px;
+	background-color: rgba(157, 243, 157, 0.952);
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+/* Close button styled similarly to toast message for uniform look */
+#close_toast {
+	background-color: rgba(157, 243, 157, 0.952);
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+/* Nav tabs styling with font size, background color*/
+.tabs-styles>li>a {
+	font-size: 20px;
+	font-weight: bold;
+	border: 2px solid grey;
+	color: white;
+	background-color: #6C63FF;
+}
+
+.tabs-styles>li.active>a {
+	background-color: #6C63FF;
+	color: #FFFFFF;
+}
+
+.tabs-styles>li>a:hover {
+	background-color: white;
+	color: black;
+}
+
+body{
+	margin-left: -10px;
+}
+/* Adding margin for main content */
+#mypage-centercontent {
+	background: #F4F1FF;
+	border-radius: 15px;
+	padding: 15px;
+	margin: auto;
+}
+.input-styles{
+	width: 50%;
+}
+.btn-styles{
+	margin-left: 3%;
+}
+/* For the result container */
+#longest_word_result,#string_reverse_result,#max_number_result {
+    width: 100%;          /* or a fixed width */
+    word-wrap: break-word; /* break long words */
+    overflow-wrap: break-word; /* ensure wrapping */
+    white-space: pre-wrap; /* preserve spaces and line breaks */
+    
+    padding: 5px;
+}
+
+.modal-button{
+	margin-top: -200px;
+}
+
+/* For Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0); /* transparent overlay */
+    z-index: 9999;
+    display: none; /* hidden by default */
+}
+
+

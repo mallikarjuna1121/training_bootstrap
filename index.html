@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Resume</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="bs.css">
+</head>
+
+<body>
+	<!-- Overlay to block user interaction -->
+	<div id="overlay"></div>
+	<!-- Header section -->
+	<div id="mypage-header" class="container">
+		<h1 id="display_name">SUNKE MALLIKARJUNA</h1>
+		<a href="#" class="anchor">Linkedin</a><span> |</span>
+		<a href="#" class="anchor">Github</a><span> |</span>
+		<a href="#" class="anchor">Leetcode</a>
+	</div>
+	<div class="row container" id="mypage-centercontent">
+
+		<!-- Navigation tabs (left on desktop, top on mobile) -->
+		<div class="col-lg-3 col-md-4 col-sm-12 tabs-left ">
+			<ul class="nav nav-tabs tabs-styles" role="tablist">
+				<li class="active">
+					<a href="#objective" role="tab" data-toggle="tab" data-toggle="tooltip"
+						title="Click to view objective">
+						<span class="glyphicon glyphicon-flag icon">&nbsp</span>Objective
+					</a>
+				</li>
+				<li>
+					<a href="#education" role="tab" data-toggle="tab" data-toggle="tooltip"
+						title="Click to view education">
+						<span class="glyphicon  glyphicon-education">&nbsp</span>Education
+					</a>
+				</li>
+				<li>
+					<a href="#skills" role="tab" data-toggle="tab" data-toggle="tooltip" title="Click to view skills">
+						<span class="glyphicon  glyphicon-cog">&nbsp</span>Skills
+						<span class="badge">6</span>
+					</a>
+				</li>
+				<li>
+					<a href="#projects" role="tab" data-toggle="tab" data-toggle="tooltip"
+						title="Click to view projects">
+						<span class="glyphicon  glyphicon-folder-open">&nbsp</span> Projects
+						<span class="badge">2</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Main content for each tab -->
+		<div class="col-lg-9 col-md-8 col-sm-12 center-content">
+			<div class="tab-content">
+
+				<!-- Objective tab content -->
+				<div class="tab-pane fade in active" id="objective">
+					<p class="paragraph-align highlight-box">To obtain a challenging position in a reputable
+						organization where I can utilize my skills and grow professionally while contributing to the
+						success of the company. I aim to apply my knowledge of software development, web
+						technologies, and problem-solving skills to deliver high-quality solutions. I am eager to
+						learn new technologies, collaborate effectively with teams, and take on responsibilities
+						that enhance my technical and interpersonal abilities.
+					</p>
+				</div>
+
+				<!-- Education tab content -->
+				<div class="tab-pane fade" id="education">
+					<div class="highlight-box">
+						<p>Bachelor of Technology (B.Tech) <br>
+							Electronics and Communication Engineering <br>
+							MITS, Madanapalle <br>
+							Graduation Year: 2025
+						</p>
+					</div>
+				</div>
+
+				<!-- Skills tab content -->
+				<div class="tab-pane fade highlight-box" id="skills">
+					<div class="skills-section">
+						<ul>
+							<li>
+								<span class="glyphicon glyphicon-file"> HTML </span>
+								(Responsive layouts, semantic HTML)
+
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-pencil"> CSS</span>
+								(Flexbox, Grid, animations)
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-certificate"> Java </span>
+								(OOP, Collections, JDBC)
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-tree-conifer"> Python </span>
+								(OOP, file handling)
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-console"> JavaScript </span>
+								(DOM, events)
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-list-alt"> SQL </span>
+								(Joins, Group By, Subqueries)
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Projects tab content -->
+				<div class="tab-pane fade highlight-box" id="projects">
+					<span class="important-content">Student Management System</span>
+					<p class="paragraph-align">
+						- The Student Management System is a software application designed to
+						simplify and automate the management of student information in educational institutions.</p>
+					<span class="important-content">Antenna Design</span>
+					<p class="paragraph-align">
+						- The Antenna Design project focuses on designing antennas for
+						applications such as wireless, satellite, or radar systems with optimized parameters like
+						gain, pattern, bandwidth, and efficiency.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section containing all JavaScript exercise forms -->
+	<div class="container" id="exercise_forms">
+		<div class="row" id="auto_date">
+
+			<!-- Datepicker form block -->
+			<div class="col-sm-6">
+				<div class="form-group form-styles">
+					<fieldset>
+						<legend class="w-auto">Date Picker</legend>
+						<form action="">
+							<input type="text" class="form-control input-styles" id="date_picker" name="datepicker"
+								placeholder="DD/MM/YYYY" readonly>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+
+			<!-- Autocomplete form block -->
+			<div class="col-sm-6">
+				<div class="form-group form-styles">
+					<fieldset>
+						<legend class="w-auto">Auto Complete</legend>
+						<form action="">
+							<input type="text" class="form-control input-styles" placeholder="Enter technologies..."
+								id="auto_complete" name="techStack">
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<!-- Max number calculation form -->
+			<div class="col-sm-6">
+				<div class="form-group form-styles">
+					<fieldset>
+						<legend class="w-auto">Max Number</legend>
+						<form action="">
+							<div class="form-group form-styles">
+								<label for="num1">First Number:</label>
+								<input type="number" class="form-control input-styles" id="num1"
+									placeholder="Enter first number">
+							</div>
+							<div class="form-group form-styles">
+								<label for="num2">Second Number:</label>
+								<input type="number" class="form-control input-styles" id="num2"
+									placeholder="Enter second number">
+							</div>
+						</form>
+						<button id="max_of_two_button" class="btn btn-success mt-2 btn-styles">Get Max Number &nbsp;
+							<span class="glyphicon glyphicon-arrow-up"></span>
+						</button>&nbsp; Result is :
+						<span id="max_number_result"></span>
+
+
+
+
+					</fieldset>
+				</div>
+			</div>
+
+			<!-- Cookie save form -->
+			<div class="col-sm-6">
+				<div class="form-group form-styles">
+					<fieldset>
+						<legend class="w-auto">Cookie</legend>
+						<form action="">
+							<div class="form-group form-styles">
+								<label for="user_name">Name:</label>
+								<input type="text" class="form-control input-styles" id="user_name"
+									placeholder="Enter name">
+								<span id="name_error" style="color:red; font-size:14px;"></span>
+							</div>
+							<div class="form-group form-styles">
+								<label for="user_phone">Phone:</label>
+								<input type="number" class="form-control input-styles" id="user_phone"
+									placeholder="Enter phone number">
+								
+							</div>
+						</form>
+						<button id="cookie_button" class="btn btn-warning mt-2 btn-styles">Save &nbsp;
+							<span class="glyphicon glyphicon-floppy-disk"></span>
+						</button>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<!-- Reverse string form -->
+			<div class="col-sm-6">
+				<div class="form-group form-styles">
+					<fieldset>
+						<legend class="w-auto">Reverse String</legend>
+						<form action="">
+							<div class="form-group form-styles">
+								<label for="reverse_input">String:</label>
+								<input type="text" class="form-control input-styles" id="reverse_input"
+									placeholder="Enter string">
+							</div>
+						</form>
+						<button id="reverse_button" class="btn btn-info mt-2 btn-styles">Reverse String &nbsp;
+							<span class="glyphicon glyphicon-transfer"></span>
+						</button>&nbsp; Result is :
+						<span id="string_reverse_result"></span>
+					</fieldset>
+				</div>
+			</div>
+
+			<!-- Longest word form -->
+			<div class="col-sm-6">
+				<div class="form-group form-styles">
+					<fieldset>
+						<legend class="w-auto">Longest Word</legend>
+						<form action="">
+							<div class="form-group form-styles">
+								<label for="longest_input">String:</label>
+								<input type="text" class="form-control input-styles" id="longest_input"
+									placeholder="Enter comma-separated words">
+							</div>
+						</form>
+						<button id="longest_word_button" class="btn btn-danger mt-2 btn-styles">Longest Word &nbsp;
+							<span class="glyphicon glyphicon-align-left"></span>
+						</button>&nbsp; Result is :
+						<span id="longest_word_result"></span>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer section with contact details -->
+	<div id="mypage-footer" class="container">
+		<p>
+			Phone : +91 <span id="display_phone">9110333218</span>
+			<br>
+			Email : sunkemallikarjuna1121@gmail.com
+		</p>
+	</div>
+
+	<div class="container-fluid">
+
+		<!-- Modal popup section -->
+		<div class="modal fade" id="alert_modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<p class="modal-title"><strong>Confirmation</strong><span><button type="button" class="close"
+									data-dismiss="modal">&times;</button></span></p>
+
+					</div>
+					<div class="modal-body">
+						Header slide down completed...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Implementing custom toast-->
+	<div id="my_toast" class="custom-toast">
+		<p id="toast_message" class="bg-success">success: cookie saved successfully!
+			<span id="close_toast">x</span>
+		</p>
+	</div>
+
+	<!-- JS includes for jQuery, jQuery UI, Bootstrap, and custom file -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- Custom JavaScript -->
+	<script src="bs.js"></script>
+</body>
+
+</html>
